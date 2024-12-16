@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+* {
+  font-family: "Sora", sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+/* tabs */
+.rs-nav.rs-nav-pills.rs-nav-horizontal {
+  flex-wrap: wrap;
+  gap: 6px !important;
+  width: 100%;
+}
+.rs-nav-pills {
+  background-color: transparent !important;
+}
+.courseDetails .rs-nav-item {
+  padding: 6px 12px !important;
+  border-radius: 0px !important;
+  font-size: 14px;
+  border-bottom: 2px solid transparent;
+}
+.courseDetails .rs-nav-pills {
+  box-shadow: none !important;
+}
+.courseDetails .rs-nav-item:hover {
+  color: var(--primary) !important;
+}
+.courseDetails .rs-nav-item.rs-nav-item-active {
+  box-shadow: none !important;
+  border-color: var(--primary);
+}
+
+.rs-nav-item.rs-nav-item-active {
+  border-color: var(--primary) !important;
+  color: var(--primary) !important;
+}
+/* accordion */
+.rs-panel-header.rs-heading {
+  padding: 4px 0px !important;
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+.rs-panel-group > .rs-panel + .rs-panel:before {
+  display: none !important;
+}
+.rs-panel-header.rs-heading:hover {
+  background-color: var(--light);
+}
+
+.rs-panel.rs-panel-in.rs-panel-collapsible .rs-panel-header.rs-heading {
+  background-color: var(--primary);
+  color: white !important;
+  margin-top: 3px;
+}
+.rs-panel.rs-panel-in.rs-panel-collapsible .rs-panel-header.rs-heading span {
+  color: white !important;
+}
+.rs-panel.rs-panel-in.rs-panel-collapsible .rs-panel-header.rs-heading svg {
+  fill: white !important;
+}
+.rs-panel-btn {
+  padding: 10px 16px !important;
+}
+.rs-panel-btn:focus,
+.rs-panel-btn:hover {
+  background-color: transparent !important;
+}
+
+.rs-panel-body {
+  padding: 0px 14px 14px !important;
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+.filterSideBar .rs-panel-body {
+  border-bottom: none;
+}
+
+/* slick carousel */
+.custom-dot {
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active .custom-dot {
+  background-color: var(--primary);
+}
+
+.slick-slide {
+  padding: 0 10px; /* Adjust the value for desired spacing */
+}
+.slick-arrow.slick-next {
+  display: none;
+}
+
+/* /spiner css */
+
+.spiner {
+  border: 2px solid white;
+}
+.spiner.color {
+  border: 2px solid var(--background);
+  border-top-color: transparent;
+}
+body.dark .spiner.color {
+  border: 2px solid white;
+  border-top-color: transparent;
+}
+.spinerTp {
+  border: 3px solid var(--background);
+}
+
+.spiner,
+.spinerTp {
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: lds-ring 1.2s linear infinite;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rs-modal-body {
+  padding: 0 !important;
+}
